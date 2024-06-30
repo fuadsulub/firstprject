@@ -1,0 +1,137 @@
+:root{
+--primary_color:#bc191a;
+--second_color:rgb(63, 63, 66);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+font-family: 'sans-serif';
+line-height: 1.4;
+color: #fff;
+}
+/*navbar menu style*/
+.navbar{
+width: 100%;
+height:auto;
+background-color:var(--primary_color);
+margin-top: 105px;
+position: fixed;
+}
+.brand img{
+width: 15%;
+height: 40%;
+}
+.navbar ul{
+display: flex;
+align-items: center;
+}
+.navbar li{
+list-style: none;
+margin: 0 15px;
+}
+.navbar a{
+text-decoration: none;
+color: white;
+}
+.navbar a:hover{
+	text-decoration: underline;
+}
+.menu_left ul li a{
+flex: 3;
+font-size:15px;
+margin-left: 0px;
+padding-left: 0px;
+}
+/*brand website  */
+.navbar_brand{
+background-color:var(--primary_color);
+padding: 10px;
+width: 100%;
+position: fixed;
+}
+.navbar_brand img{
+height: 80px;
+
+}
+
+/* heading*/
+.news{
+display: grid;
+grid-template-columns:repeat(2, 1fr);
+padding-right: 550px;
+padding-top: 20px;
+margin: 120px 10px;
+width: 100%;
+
+}
+.news img{
+width: 600px;
+height: 480px;
+border-radius: 50px;
+margin-top: 80px;
+}
+.heading p,h2,h4 {
+color: black;
+text-align:center;
+text-align: justify;
+margin:0;
+padding: 0;
+padding-left:0px;
+width: 600px;
+margin-top:70px;
+}
+.heading p {
+font-size: large;
+}
+/*news colums four columns*/
+.list{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+margin: 10px;
+}
+.list h3{
+color: black;
+}
+.list img{
+width: 350px;
+height: 350px;
+border-radius: 50px;
+padding: -20px;
+}
+.container{
+max-width: 2100px;
+width: 100%;
+margin: auto;
+}
+/* footer*/
+.logo{
+background-color:#bc191a;
+padding: 20px;
+}
+.sub_footer{
+background-color: var(--second_color);
+width: 100%;	
+}
+.mini_footer{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+background-color: var(--second_color);
+width:100%;
+font-size: 16px;
+padding: 30px;
+}
+.mini_footer div{
+padding: 15px;
+}
+.mini_footer p:hover{
+transform: scale(1.1);
+}
+/*copyright*/
+.copyright{
+background-color: var(--second_color);
+}
